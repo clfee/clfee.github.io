@@ -7,10 +7,12 @@ toc: false
 toc_label: "Overview"
 ---
 
-I enjoy diving into the data to search for useful insights. 
+I enjoy digging useful information from data. 
 
 
-## Background: Biomarker, Proteomics, Genomics, Marketing/Sales Analysis
+### Background
+* Marketing/Sales Analysis, 
+* Biomarker dsicovery, Omics
 
 ### Programming Languages 
 * R
