@@ -14,7 +14,7 @@ Email is the most accessible form of online communication; it helps to capture a
 
 Trackig the performance of the emails will help to build deeper understanding of audience behavior and find new ways to grow revenue. Traditional analytics—list size, opens and clicks—provide a high level snapshot, but they do not provide insights on the underlying drivers behind those metrics. A dashboard shares your analysis not only makes easy to communicate results but also provide opportunites to identify new metrics.
 
-![Overview]("/pics/overview1.png")  
+![Overview](/pics/overview1.jpg)  
 
 This dashboard is a simple static html file created using R. [Demo](/pics/dashboard/data_explore.html) It contains simple graphs and filters without the need for a Shiny server. The shortcoming of that it requires to precompute most of the variables as not much computation is possible. However, it makes deployment much easier.  
 
