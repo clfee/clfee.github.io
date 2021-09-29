@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "Chia Fang Lee"
   avatar           : "/assets/IMG_Avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hello, World. I love working with analytical tools to discver ideas that can improve human health."
+  bio              : "Hello, World! I love working with analytical tools to discover ideas that can improve human health."
   location         : "Texas, USA"
   email            :
   links:
