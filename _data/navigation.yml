@@ -9,7 +9,3 @@ main:
     description: "About me"
   - title: "Year Archive"
     url: /year-archive/
-  - title: "Tags Archive"
-    url: /tags-archive/
-  - title: "Sitemap"
-    url: /sitemap/
