@@ -28,7 +28,14 @@ Thanks to the advancement in deep learning field, neural network model architect
 - Result evaluation
  
 ![flow]({{ site.url }}{{ site.baseurl }}/assets/images/img_clf/flow.png)
-![flow1](https://github.com/clfee/clfee.github.io/blob/master/assets/images/img_clf/flow.PNG)  
+{: .full}  
+
+![flow1x](/assets/images/flow.PNG)
+
+<figure class="half">
+    <a href="/assets/images//img_clf/flow.png"><img src="/assets/images//img_clf/flow.png"></a>
+    <figcaption>Workflow.</figcaption>
+</figure>
 
 #### Data Overview
 
