@@ -274,7 +274,7 @@ defaults:
       comments: true
       share: false
       related: false
-      toc: true
+      toc: false
       toc_sticky: true
       header:
         overlay_image: /assets/images/beachX1.png
@@ -282,7 +282,7 @@ defaults:
       sidebar:
         nav: "didnav"
   # _pages
-      toc: true
+      toc: false
   - scope:
       path: "_pages"
       type: pages
