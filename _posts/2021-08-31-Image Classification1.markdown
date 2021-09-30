@@ -13,7 +13,9 @@ excerpt: "Malaria cell classification (part1)"
 
 I remember years ago seeing my colleague spent hours under a microscopes counting cells underwent of apoptosis or Dauer larva formation. I mean it is fun doing experiments in the lab but telling differences of these tiny worms would probably is the last thing I'd want to do. This task does take lots of valuable time from a researcher. Imagine, how many more novel anti-agents like this [article](https://pubmed.ncbi.nlm.nih.gov/23049887/) Yongsoon could bring us if the deep learning techniques were ready to use back in 2011.
 
-![img1](/assets/images/img_clf/dauer.png)    
+![img1](/assets/images/img_clf/dauer.png) 
+![img2](https://github.com/clfee/clfee.github.io/blob/master/assets/images/img_clf/dauer.PNG) 
+
 
 
 Thanks to the advancement in deep learning field, neural network model architectures can be readily reused and, in most cases, are tested across multiple applications to establish robustness. Here, I'm going to show how easy it is to implement transfer learning using Keras in Python for Malaria cell classification. The basic concept of transfer learning is using the knowledge (architecture or weights) gained from a neural network model that was trained to recognize animals to recognize cats. The dataset used here came from [NIH](https://ceb.nlm.nih.gov/repositories/malaria-datasets/), along with recent publications[1](https://peerj.com/articles/6977/),[2](https://peerj.com/articles/4568/).
