@@ -63,9 +63,9 @@ train_ids, test_ids = train_test_split(all_img_ids, test_size=0.01, random_state
 train_ids, valid_ids = train_test_split(train_ids, test_size=0.1, random_state=21)
 ```
 Making sure, the proportion of the infected cell is as expected after data split.
-![pct](/assets/images/pct.png) 
+![pct](/assets/images/pct.PNG) 
 
-Let's also check few images. The images come with different sizes. They will need to reshape and normalize before xx.
+Let's also check few images. The images come with different sizes. They will need to reshape and normalize before feeding to the model.
 
 ```yml
 # Extract numpy values from image column in data frame
@@ -255,7 +255,7 @@ Train versus validation loss for all epochs is shown here. The orange and blue l
 
 The [ROC curve](https://pubmed.ncbi.nlm.nih.gov/3753562/) is created by plotting the true positive rate against the false positive rate. We can see the model performs reasonable well.
 
-![ROC](/assets/images/ROC.png)
+![ROC](/assets/images/ROC.PNG)
 
 We can try different approaches to improve the model perfromance, such as train the model for a longer time or use all the training data (since only 1/3 of the parasite data was used). We can also try a different base model, the previous [publication](https://peerj.com/articles/6977/),  shows 99.32% accuracy with VGG-19 alone. 
 
@@ -269,7 +269,7 @@ Next, I will show how to produce visual explanation using Grad-CAM. The purpose 
 
 An example of Grad-CAM:
 
-![Gradcam](/assets/images/gradcam_res.png)
+![Gradcam](/assets/images/gradcam_res.PNG)
 
 #### Notes
 Note 1: AUC is the area below these ROC curves. Therefore, in other words, AUC is a great indicator of how well a classifier functions.
