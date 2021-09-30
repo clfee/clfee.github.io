@@ -11,7 +11,7 @@ toc_icon: "cog"
 excerpt: "Malaria cell classification (part1)"
 ---
 
-I remember years ago seeing my colleague spent hours under a microscope counting Dauer larva formation. I mean it is a lot of fun doing experiments, making new discoveries in the lab but telling differences of these tiny worms would probably the last thing I'd like to do. This kind of task takes lots of valuable time from a researcher. Imagine, how many more novel anti-ageing agents like this [article](https://pubmed.ncbi.nlm.nih.gov/23049887/) Yongsoon could bring to us if the deep learning techniques were ready to use back in 2011.
+I remember years ago seeing my colleague spent hours under a microscope counting Dauer larva formation. I mean it is a lot of fun doing experiments, making new discoveries in the lab but telling differences of these tiny worms would probably the last thing I'd like to do. This kind of task takes lots of valuable time from a researcher. Imagine, how many more novel anti-aging agents like this [article](https://pubmed.ncbi.nlm.nih.gov/23049887/) Yongsoon could bring to us if the deep learning techniques were ready to use back in 2011.
 
 
 ![img2](/assets/images/dauer.PNG) 
@@ -83,7 +83,7 @@ for i in range(9):
     plt.imshow(img)
     plt.axis('off')
 ``` 
-![random_images](/assets/images/random_img.png)
+![random_images](/assets/images/random_img.PNG)
 
 #### Loading data
 
@@ -130,12 +130,11 @@ def get_train_generator(df, image_dir, x_col, y_cols, shuffle=True, batch_size=8
 ```
 Before, model building we'll need to define a loss function to adress class imbalance. We can give more weight for the less frequent class and less weight for the other one, see [here](https://arxiv.org/pdf/1711.05225.pdf) . We can write the overall average cross-entropy loss over the entire training set  D  of size  N  as follows:
 
-![loss](/assets/images/loss.png)
+![loss](/assets/images/loss.PNG)
 
 Next, we will use a pre-trained DenseNet121 model which we can load directly from Keras and then add two layers on top of it.
 
-- Set include_top=False, to remove the orginal fully connect dense layer (so you can adjust the ouptut prediction clsses or  
-  activation function). 
+- Set include_top=False, to remove the orginal fully connect dense layer (so you can adjust the ouptut prediction clsses or activation function). 
 
 - Use specific layer using get_layer(). For example: base_model.get_layer('conv5_block16_conv')
 
@@ -249,7 +248,7 @@ plt.show()
 ```
 Train versus validation loss for all epochs is shown here. The orange and blue lines indicate train loss and validation loss respectively. We can see the model may be under-fitted. One way to overcome this is simply increase the number of epochs. Also with the callback function, we can re-use the best weights saved at 12th epoch.  
 
-![history](/assets/images/history.png)
+![history](/assets/images/history.PNG)
 
 #### Evaluation
 
