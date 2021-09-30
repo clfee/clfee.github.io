@@ -21,7 +21,7 @@ I remember years ago seeing my colleague spent hours under a microscopes countin
 Thanks to the advancement in deep learning field, neural network model architectures can be readily reused and, in most cases, are tested across multiple applications to establish robustness. Here, I'm going to show how easy it is to implement transfer learning using Keras in Python for Malaria cell classification. The basic concept of transfer learning is using the knowledge (architecture or weights) gained from a neural network model that was trained to recognize animals to recognize cats. The dataset used here came from [NIH](https://ceb.nlm.nih.gov/repositories/malaria-datasets/), along with recent publications[1](https://peerj.com/articles/6977/),[2](https://peerj.com/articles/4568/).
 
 
-#### Workflow: 
+#### Workflow 
 - Loading data and data pre-processing
 - Transfer learning and fine-tuning (DenseNet121)
 - Result evaluation
@@ -51,7 +51,7 @@ test$normal  <- ifelse(test$label != 'parasite', 1,0)
 test$parasite <- ifelse(test$label == 'parasite', 1,0)
 ```
 And the csv file looks like this.
-![csv](/assets/images/preview.png)  
+![csv](/assets/images/preview.PNG)  
 
 In reality, we don't usually see many cells infected with parasites, therefore less than 1/3 of the infected samples were used in this exercise. 
 
@@ -251,7 +251,7 @@ Train versus validation loss for all epochs is shown here. The orange and blue l
 
 ![history](/assets/images/history.png)
 
-#### Evaluation: 
+#### Evaluation
 
 The [ROC curve](https://pubmed.ncbi.nlm.nih.gov/3753562/) is created by plotting the true positive rate against the false positive rate. We can see the model performs reasonable well.
 
