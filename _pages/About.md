@@ -4,17 +4,22 @@ permalink: /About/
 layout: single
 author_profile: true
 toc: false
-toc_label: "Overview"
 ---
 
-I enjoy digging useful information from data. 
+I am passionate about applying skills that can improve human life. 
+This blog shares notes I found useful for biotech/medical reaesrch and business applications.
+
 
 
 ### Background
-* Marketing/Sales Analysis, 
-* Biomarker dsicovery, Omics
+
+- Biomarker dsicovery,Protein characterization, Omics
+- Marketing/Sales Analysis
 
 ### Programming Languages 
-* R
-* Python
-* SAS
+- R, Python, SAS
+- Sql, Tableau
+
+### Human Languages 
+- English
+- Mandarin, Taiwanese

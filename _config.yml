@@ -24,6 +24,7 @@ description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : clfee/clfee.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+breadcrumbs              : true 
 teaser                   : "/assets/images/beach.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/d1.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -96,7 +97,7 @@ analytics:
 author:
   name             : "Chia Fang Lee"
   avatar           : "/assets/IMG_Avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hello, World! I love working with analytical tools to discover ideas that can improve human health."
+  bio              : "Hello, World!"
   location         : "Texas, USA"
   email            :
   links:
@@ -163,8 +164,8 @@ exclude:
 keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+encoding: utf-8
+markdown_ext: markdown,mkdown,mkdn,mkd,md
 
 
 # Conversion
@@ -272,29 +273,32 @@ defaults:
       author_profile: true
       read_time: false
       comments: true
-      share: false
+      share: true
       related: false
-      toc: false
+      toc: true
       toc_sticky: true
+      toc_label: "Contents"
+      toc_icon: "cog"
       header:
         overlay_image: /assets/images/beachX1.png
+        image_description: Bahia Honda State Park
+        caption: "[Photo by *MC*]"
         og_image: /assets/images/d1.png 
-      sidebar:
-        nav: "didnav"
+
   # _pages
-      toc: false
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: false
       comments: # true
       share: true
       related: true
       header:
        og_image: /assets/images/did-og.png
-      sidebar:
-        nav: "didnav"
       toc: true
+      toc_sticky: true
+      toc_label: "Contents"
+      toc_icon: "cog"
