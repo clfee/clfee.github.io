@@ -298,7 +298,4 @@ defaults:
       related: true
       header:
        og_image: /assets/images/did-og.png
-      toc: true
-      toc_sticky: true
-      toc_label: "Contents"
-      toc_icon: "cog"
+
