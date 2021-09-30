@@ -14,8 +14,7 @@ excerpt: "Malaria cell classification (part1)"
 I remember years ago seeing my colleague spent hours under a microscopes counting cells underwent of apoptosis or Dauer larva formation. I mean it is fun doing experiments in the lab but telling differences of these tiny worms would probably is the last thing I'd want to do. This task does take lots of valuable time from a researcher. Imagine, how many more novel anti-agents like this [article](https://pubmed.ncbi.nlm.nih.gov/23049887/) Yongsoon could bring us if the deep learning techniques were ready to use back in 2011.
 
 
-![img1]({{ site.url }}{{ site.baseurl }}/assets/images/img_clf/dauer.png)
-![img2](https://github.com/clfee/clfee.github.io/blob/master/assets/images/img_clf/dauer.PNG) 
+![img2](/assets/images/dauer.PNG) 
 
 
 
@@ -27,15 +26,7 @@ Thanks to the advancement in deep learning field, neural network model architect
 - Transfer learning and fine-tuning (DenseNet121)
 - Result evaluation
  
-![flow]({{ site.url }}{{ site.baseurl }}/assets/images/img_clf/flow.png)
-{: .full}  
-
 ![flow1x](/assets/images/flow.PNG)
-
-<figure class="half">
-    <a href="/assets/images//img_clf/flow.png"><img src="/assets/images//img_clf/flow.png"></a>
-    <figcaption>Workflow.</figcaption>
-</figure>
 
 #### Data Overview
 
@@ -60,7 +51,7 @@ test$normal  <- ifelse(test$label != 'parasite', 1,0)
 test$parasite <- ifelse(test$label == 'parasite', 1,0)
 ```
 And the csv file looks like this.
-![csv](/assets/images/img_clf/preview.png)  
+![csv](/assets/images/preview.png)  
 
 In reality, we don't usually see many cells infected with parasites, therefore less than 1/3 of the infected samples were used in this exercise. 
 
@@ -72,7 +63,7 @@ train_ids, test_ids = train_test_split(all_img_ids, test_size=0.01, random_state
 train_ids, valid_ids = train_test_split(train_ids, test_size=0.1, random_state=21)
 ```
 Making sure, the proportion of the infected cell is as expected after data split.
-![pct](/assets/images/img_clf/pct.png) 
+![pct](/assets/images/pct.png) 
 
 Let's also check few images. The images come with different sizes. They will need to reshape and normalize before xx.
 
@@ -92,7 +83,7 @@ for i in range(9):
     plt.imshow(img)
     plt.axis('off')
 ``` 
-![random_images](/assets/images/img_clf/random_img.png)
+![random_images](/assets/images/random_img.png)
 
 #### Loading data
 
@@ -139,7 +130,7 @@ def get_train_generator(df, image_dir, x_col, y_cols, shuffle=True, batch_size=8
 ```
 Before, model building we'll need to define a loss function to adress class imbalance. We can give more weight for the less frequent class and less weight for the other one, see [here](https://arxiv.org/pdf/1711.05225.pdf) . We can write the overall average cross-entropy loss over the entire training set  D  of size  N  as follows:
 
-![loss](/assets/images/img_clf/loss.png)
+![loss](/assets/images/loss.png)
 
 Next, we will use a pre-trained DenseNet121 model which we can load directly from Keras and then add two layers on top of it.
 
@@ -258,13 +249,13 @@ plt.show()
 ```
 Train versus validation loss for all epochs is shown here. The orange and blue lines indicate train loss and validation loss respectively. We can see the model may be under-fitted. One way to overcome this is simply increase the number of epochs. Also with the callback function, we can re-use the best weights saved at 12th epoch.  
 
-![history](/assets/images/img_clf/history.png)
+![history](/assets/images/history.png)
 
 #### Evaluation: 
 
 The [ROC curve](https://pubmed.ncbi.nlm.nih.gov/3753562/) is created by plotting the true positive rate against the false positive rate. We can see the model performs reasonable well.
 
-![ROC](/assets/images/img_clf/ROC.png)
+![ROC](/assets/images/ROC.png)
 
 We can try different approaches to improve the model perfromance, such as train the model for a longer time or use all the training data (since only 1/3 of the parasite data was used). We can also try a different base model, the previous [publication](https://peerj.com/articles/6977/),  shows 99.32% accuracy with VGG-19 alone. 
 
@@ -278,7 +269,7 @@ Next, I will show how to produce visual explanation using Grad-CAM. The purpose 
 
 An example of Grad-CAM:
 
-![Gradcam](/assets/images/img_clf/gradcam_res.png)
+![Gradcam](/assets/images/gradcam_res.png)
 
 #### Notes
 Note 1: AUC is the area below these ROC curves. Therefore, in other words, AUC is a great indicator of how well a classifier functions.
