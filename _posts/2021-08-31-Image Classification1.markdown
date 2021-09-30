@@ -11,7 +11,7 @@ toc_icon: "cog"
 excerpt: "Malaria cell classification (part1)"
 ---
 
-I remember years ago seeing my colleague spent hours under a microscopes counting cells underwent of apoptosis or Dauer larva formation. I mean it is fun doing experiments in the lab but telling differences of these tiny worms would probably is the last thing I'd want to do. This task does take lots of valuable time from a researcher. Imagine, how many more novel anti-agents like this [article](https://pubmed.ncbi.nlm.nih.gov/23049887/) Yongsoon could bring us if the deep learning techniques were ready to use back in 2011.
+I remember years ago seeing my colleague spent hours under a microscope counting Dauer larva formation. I mean it is a lot of fun doing experiments, making new discoveries in the lab but telling differences of these tiny worms would probably the last thing I'd like to do. This kind of task takes lots of valuable time from a researcher. Imagine, how many more novel anti-ageing agents like this [article](https://pubmed.ncbi.nlm.nih.gov/23049887/) Yongsoon could bring to us if the deep learning techniques were ready to use back in 2011.
 
 
 ![img2](/assets/images/dauer.PNG) 
@@ -273,9 +273,11 @@ An example of Grad-CAM:
 
 #### Notes
 Note 1: AUC is the area below these ROC curves. Therefore, in other words, AUC is a great indicator of how well a classifier functions.
+
 Note 2: A good tutorial for to learn neural network image classification from [scratch](https://medium.com/@saugata.paul1010/a-case-study-on-malaria-detection-using-cell-images-and-deep-convolution-neural-networks-in-keras-8d07356a3d05) and Andrew NG’s deep learning [course](https://www.coursera.org/specializations/deep-learning).
 
 Note 3: 
+
 ```yml
 # packages used 
 import os
