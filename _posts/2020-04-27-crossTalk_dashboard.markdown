@@ -22,10 +22,15 @@ This dashboard is a simple static html file created using R. [Demo](/pics/dashbo
 
 Steps:
 -	Create an R markdown file 
+
 ![Step1](/pics/dashboard/s1.PNG)
+
 -  New markdown file is shown
+
 ![Step2](/pics/dashboard/s2.PNG)
+
 -	Click Knit and select knit flexdashboard to view the dashboard
+
 ![Step3](/pics/dashboard/s3.PNG)
 
 Try it with the code [here](https://github.com/clfee/Shiny-apps/blob/main/Taiwan%20Covid19_1.Rmd) .
