@@ -4,10 +4,13 @@ date:   2021-08-31
 
 categories: Python Image Classification
 
-toc: false
-toc_label: "overview"
+toc: True
+classes: wide
+toc_label: "Overview"
+toc_icon: "cog
 excerpt: "Malaria cell classification (part2)"
 ---
+
 When building a predictive model, there are two important criteria: predictive accuracy and interpretability, which generally have a trade-off relationship. In the previous [post](https://clfee.github.io/python/image/classification/image-classification1), we have shown that the DenseNet121 model can achieve high accuracy in detecting cells infected with parasites. 
 
 Here, I am going to introduce a powerful technique GRAD-CAM (gradient-weighted class activation mapping) to visualize which parts of an image are most important to the predictions of an image regression network. GRAD-CAM is a generalization of the CAM technique which determines the importance of each neuron in a network prediction by considering the gradients of the target flowing through the deep network. Unlike CAM which requires a particular kind of CNN architecture to perform global average pooling prior to prediction and forces us to change the base model retrain the network. In contrast, GRAD-CAM is accessing intermediate activations in the deep learning model and computing gradients with respect to the class output. For more details, please [see](https://www.coursera.org/lecture/advanced-computer-vision-with-tensorflow/gradcam-u1Qub).

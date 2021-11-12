@@ -1,5 +1,5 @@
 ---
-title:  "Serverless Dashboard with R and {crosstalk}"
+title:  "Serverless Dashboard with R using {Flexdashboard}"
 date:   2021-05-28
 
 categories: R Dashboard
@@ -10,9 +10,9 @@ toc: false
 toc_label: "overview"
 excerpt: "Building a Serverless Dashboard with R"
 ---
-Email is the most accessible form of online communication; it helps to capture and retain audience attention. In fact, email marketing outperforms other online marketing strategies, including SEO (organic search), PPC (paid search), and content marketing.  Several strategies have been developed for better marketing campaigns, such as personalize email messages, target audience by segmentation (ex: past purchase/browse histories, area …, etc.) 
-
-Trackig the performance of the emails will help to build deeper understanding of audience behavior and find new ways to grow revenue. Traditional analytics—list size, opens and clicks—provide a high level snapshot, but they do not provide insights on the underlying drivers behind those metrics. A dashboard shares your analysis not only makes easy to communicate results but also provide opportunites to identify new metrics.
+Imagine as a marketing manager you need to discuss about the impact of COVID-19 alert levels on product sales with other departments. Would you go through a 25-slide deck to a 5-minute meeting? Would you project multiple Excel workbooks to convince your colleagues what you are showing is not boring at all. Or you will send them a dashboard by email before the meeting to get everyone onboard quicky and focus on the idea you are about to deliver. 
+ 
+Indeed, dashboards are the perfect tool when you want to visualize a lot of complex data and to provide users at-a-glance views of key performance indicators relevant to a particular objective. It is easy to create a dashboard using R. 
 
 ![Overview](/pics/dashboard/overview1.JPG)  
 
@@ -20,23 +20,16 @@ This dashboard is a simple static html file created using R. [Demo](/pics/dashbo
 
 {flexdashboard} is the framework allowing us to build a dashboard. Once data is loaded, use {htmlwidgets} to covert the data to a SharedData object. The interaction between sidebar filters and tables/graphs was made possible by using {crosstalk}. 
 
-```yml
-library(flexdashboard) 
-library(crosstalk)
-llibrary(plotly)
-library(leaflet)
-library(htmltools)
+Steps:
+-	Create an R markdown file 
+![Step1](/pics/dashboard/s1.PNG
+-	New markdown file is shown
+![Step2](/pics/dashboard/s2.PNG
+-	Click Knit and select knit flexdashboard to view the dashboard
+![Step3](/pics/dashboard/s3.PNG
 
-# Convert dataframe to ShareData Object
-df <- read_csv("data.csv")
-sd1 <- SharedData$new(df)
+Try it with the code [here](https://github.com/clfee/Shiny-apps) .
 
-# Create interactive plot 
-ggplotly(sd1 %>% 
-           ggplot(aes(Purchase_history), fill = click)) + 
-           geom_bar(bins=8, position = "dodge")+ 
-           xlab("Past Purchase") +
-           theme_minimal())
 ```
 
 
