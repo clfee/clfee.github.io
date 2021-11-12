@@ -24,8 +24,6 @@ Workflow:
 - Generate a heatmap by weighing the convolution outputs with the computed gradients 
 - Super-impose the heatmap to the original image
 
-* maybe a drawing here *
-
 *Load base model*
 
 We first load the base model and will only train the last 4 layers. 
