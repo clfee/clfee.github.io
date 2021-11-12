@@ -1,13 +1,13 @@
- ---
+---
 title:  "GradCam - Malaria cell case study"
 date:   2021-08-31
 
 categories: Python Image Classification
 
-toc: True
+toc: false
 classes: wide
 toc_label: "Overview"
-toc_icon: "cog
+
 excerpt: "Malaria cell classification (part2)"
 ---
 
@@ -120,5 +120,5 @@ def get_CAM(model, processed_image, actual_label, layer_name):
 ```
 ![Gradcam](/assets/images/gradcam_res.PNG)
 
-Note:
+#### Note:
 Instead of using max pooling that only keeps the highest valued ones. Average pooling allows some of the lesser intensity pixels to pass on in the pooling layer. It is important as we look at the small size of the image once it reaches this layer, max pooling could leave us with very little information. 
