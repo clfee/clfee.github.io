@@ -30,7 +30,7 @@ The data comes from an anonymous EHR. The data set contains around 9000 distinct
 
 Every id in the project was represented by a sequence of events, with each event providing patient information was recorded within a 12 hour period. Only data up to 5 days was used in model building.
 
-![Data Feature](/pics/ARDS/design.png) 
+![Data Feature](/pics/ARDS/design.PNG) 
 
 ### Data Preprocessing
 
@@ -49,9 +49,9 @@ Model evaluation
 The test set (total 789, ARDS positive 58) was used to evaluate the performance of learned models (train set , total 2518, ARDS positive 164).
 
 
-![Model Performance](/pics/ARDS/Model_Performance.png)
+![Model Performance](/pics/ARDS/Model_Performance.PNG)
 
 - Confusion matrix: 
 
-![Confusion matrix](/pics/ARDS/confu_mat.png)
+![Confusion matrix](/pics/ARDS/confu_mat.PNG)
 
