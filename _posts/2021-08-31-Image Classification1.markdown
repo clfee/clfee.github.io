@@ -273,7 +273,7 @@ Next, I will show how to produce visual explanation using Grad-CAM. The purpose 
 
 #### Notes
 Note 1: AUC is the area below these ROC curves. Therefore, in other words, AUC is a great indicator of how well a classifier functions.
-Note 2: A good tutorial for to learn neural network image classification from [scratch](https://medium.com/@saugata.paul1010/a-case-study-on-malaria-detection-using-cell-images-and-deep-convolution-neural-networks-in-keras-8d07356a3d05) and Andrew NG’s deep learning [course](https://www.coursera.org/specializations/deep-learning).
+Note 2: A good tutorial for to learn neural network image classification from [scratch](https://medium.com/@saugata.paul1010/a-case-study-on-malaria-detection-using-cell-images-and-deep-convolution-neural-networks-in-keras-8d07356a3d05) and Andrew Ng’s deep learning [course](https://www.coursera.org/specializations/deep-learning).
 
 Note 3: 
 ```yml

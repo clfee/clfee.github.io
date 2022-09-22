@@ -16,7 +16,7 @@ Indeed, dashboards are the perfect tool when you want to visualize a lot of comp
 
 ![Overview](/pics/dashboard/overview1.JPG)  
 
-This dashboard is a simple static html file created using R. [Demo](/pics/dashboard/data_explore.html) It contains simple graphs and filters without the need for a Shiny server. The shortcoming of that it requires to precompute most of the variables as not much computation is possible. However, it makes deployment much easier.  
+This dashboard is a simple static html file created using [R](/pics/dashboard/data_explore.html) . It contains simple graphs and filters without the need for a Shiny server. The shortcoming of that it requires to precompute most of the variables as not much computation is possible. However, it makes deployment much easier.  
 
 {flexdashboard} is the framework allowing us to build a dashboard. Once data is loaded, use {htmlwidgets} to covert the data to a SharedData object. The interaction between sidebar filters and tables/graphs was made possible by using {crosstalk}. 
 

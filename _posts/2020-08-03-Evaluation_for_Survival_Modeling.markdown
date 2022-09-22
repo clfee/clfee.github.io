@@ -12,7 +12,7 @@ Evaluation of the ability of a survival model to predict future data is the most
 
 To formulate this mathematically, consider the function produced by the survival model, <i>S(E)</i>, that gives a score to event E indicating the relative time at which E occurs. E<sub>i</sub> is uncensored event observed in the dataset, whereas E<sub>j</sub> is any events, censored or not censored.
 
-![math_func1](/pics/math_func1.PNG)
+![math_func1](/pics/math_func1.png)
 
 In plain words :
 

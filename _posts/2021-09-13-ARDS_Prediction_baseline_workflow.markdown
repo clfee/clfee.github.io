@@ -49,7 +49,7 @@ Model evaluation
 The test set (total 789, ARDS positive 58) was used to evaluate the performance of learned models (train set , total 2518, ARDS positive 164).
 
 
-![Model Performance](/pics/ARDS/Model_Performance.PNG)
+![Model Performance](/pics/ARDS/Model_Performance.png)
 
 - Confusion matrix: 
 
