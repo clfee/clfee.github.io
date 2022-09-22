@@ -95,10 +95,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chia Fang Lee"
+  name             : "Chris Lee"
   avatar           : "/assets/IMG_Avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hello, World!"
-  location         : "Texas, USA"
+  bio              : "Welcome!"
+  location         : "Lone Star"
   email            :
   links:
     - label: "Email"
