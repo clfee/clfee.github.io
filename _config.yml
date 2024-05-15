@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : "Things I found useful!"# site tagline that appears below site title in masthead
 name                     : "CLee"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : heyheymi.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : clfee/clfee.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 breadcrumbs              : true 
